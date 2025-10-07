@@ -5,6 +5,7 @@ import Menu from './components/Menu';
 import NotFound from './components/NotFound';
 import Registration from './components/Registration';
 import RealTime from './components/RealTime';
+import Shop from './components/Shop';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/registration" element={ <Registration />} />
         <Route path="/realtime" element={ <RealTime />} />
         <Route path="*" element={<NotFound />} />
-
+        <Route path="/shop/*" element={<Shop />} />
       </Routes>
     </div>
   );

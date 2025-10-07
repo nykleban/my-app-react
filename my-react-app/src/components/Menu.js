@@ -23,6 +23,9 @@ export default function Menu() {
            <li>
             <Link to="/realtime">Поточний час</Link>
           </li>
+          <li>
+            <Link to="/shop">Магазин</Link>
+          </li>
         </ul>
       </nav>
     </div>
