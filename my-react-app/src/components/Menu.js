@@ -26,6 +26,9 @@ export default function Menu() {
           <li>
             <Link to="/shop">Магазин</Link>
           </li>
+          <li>
+            <Link to="/events">Події</Link>
+          </li>
         </ul>
       </nav>
     </div>

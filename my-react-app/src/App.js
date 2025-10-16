@@ -6,6 +6,8 @@ import NotFound from './components/NotFound';
 import Registration from './components/Registration';
 import RealTime from './components/RealTime';
 import Shop from './components/Shop';
+import EventCart from './components/EventCart';
+import EventDetails from './components/EventDetails';
 
 function App() {
   return (
@@ -20,6 +22,10 @@ function App() {
         <Route path="/realtime" element={ <RealTime />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/shop/*" element={<Shop />} />
+        <Route path="/events/*" element={<EventCart />} />
+        <Route path="/events/:id" element={<EventDetails />} />
+        <Route path="/events/details" element={<EventDetails />} />
+
       </Routes>
     </div>
   );

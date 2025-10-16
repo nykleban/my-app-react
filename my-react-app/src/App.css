@@ -301,3 +301,179 @@ select {
 select:focus {
   border-color: #007bff;
 }
+.events{
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  text-align: left;
+}
+.eventent-card{
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  transition: 0.2s;
+  list-style: none;
+  font-size: 16px;
+}
+.eventent-card:hover {
+  transform: translateY(-4px);
+}
+.eventent-card img{
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+.categoryButton {
+  background-color: #3f5988;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin: 5px;
+  border: 1px solid #3f5988;
+}
+.categoryButton:hover {
+  background-color: #ffffff;
+  color: #3f5988;
+  border: 1px solid #3f5988;
+}
+.eventent-card .actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.favouriteButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.favouriteButton--active {
+  background-color: #3f5988;
+  color: #fff;
+}
+.favouriteButton--active:hover {
+  background-color: #2c3e66;
+}
+
+.favouriteButton--add {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.favouriteButton--add:hover {
+  background-color: #dcdcdc;
+}
+
+/* ===================== */
+/* EventDetails Styling  */
+/* ===================== */
+.event-details {
+  background-color: #ffffff;
+  border: 1px solid #111;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.event-details img {
+  width: 50%;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 420px;
+  flex-shrink: 0;
+  margin: auto 10px;
+
+}
+
+.event-details-content {
+  flex: 1;
+}
+
+.event-details h1 {
+  color: #3f5988;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.event-details p {
+  margin: 6px 0;
+  color: #222;
+}
+
+.event-details p strong {
+  color: #3f5988;
+}
+
+/* Теги або додаткові елементи (за бажанням) */
+.event-tags {
+  margin-top: 10px;
+}
+
+.event-tag {
+  display: inline-block;
+  background: #f1f4ff;
+  color: #3f5988;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+/* Кнопка "Повернутися назад" */
+.backButton {
+  display: inline-block;
+  background-color: #3f5988;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  border: 1px solid #3f5988;
+}
+
+.backButton:hover {
+  background-color: #ffffff;
+  color: #3f5988;
+  border: 1px solid #3f5988;
+}
+
+/* Адаптив — на мобільних фото зверху */
+@media (max-width: 700px) {
+  .event-details {
+    flex-direction: column;
+  }
+  .event-details img {
+    width: 100%;
+  }
+}
